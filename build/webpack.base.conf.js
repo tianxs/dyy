@@ -74,7 +74,18 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.css$/,
+        include: [
+          'node_modules/mint/lib/'    // 这里引入mint-ui 的css
+        ],
+        loader: 'style-loader!css-loader!less-loader'
+      },
     ]
   },
   node: {
