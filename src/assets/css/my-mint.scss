@@ -55,3 +55,11 @@ $color-fff: #fff;
 .mint-datetime-action {
   color: $color-primary;
 }
+.product-list{
+  .mint-navbar.is-fixed{
+    top: 40px;
+  }
+  .mint-tab-container{
+    top: 97px;
+  }
+}

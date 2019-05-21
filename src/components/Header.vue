@@ -1,5 +1,5 @@
 <template>
-  <mt-header title="产品列表">
+  <mt-header fixed title="产品列表">
     <router-link to="/" slot="left">
       <mt-button icon="back"></mt-button>
     </router-link>
